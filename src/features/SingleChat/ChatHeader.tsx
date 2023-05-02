@@ -2,24 +2,19 @@ import { FiSettings } from 'react-icons/fi';
 
 interface Props {
 	title: string;
-	numberOfMembers: number;
-	numberOfOnline: number;
+	isOnline: boolean;
 	onSettingsClick: () => void;
 }
 
-const ChatHeader = ({
-	title,
-	numberOfMembers,
-	numberOfOnline,
-	onSettingsClick,
-}: Props) => {
-	const subTitle = `${numberOfMembers} members, ${numberOfOnline} online`;
+const ChatHeader = ({ title, isOnline, onSettingsClick }: Props) => {
+	const status = isOnline ? 'Online' : 'Offline';
+	const statusColor = status === 'Online' ? 'text-green-400' : 'text-gray-400';
 
 	return (
 		<header className='flex gap-4 items-center justify-between'>
 			<div>
 				<h1 className='text-lg font-bold'>{title}</h1>
-				<p className='text-xs text-gray-300'>{subTitle}</p>
+				<p className={`text-xs ${statusColor}`}>{status}</p>
 			</div>
 			<div>
 				<FiSettings />
