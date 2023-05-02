@@ -16,7 +16,7 @@ const ChatMate = ({ chatMate }: Props) => {
 			</div>
 			<div className='flex-1 space-y-1'>
 				<h1 className='font-medium'>{chatMate.name}</h1>
-				<p className='text-sm line-clamp-1'>
+				<p className='text-xs line-clamp-1'>
 					This is something urgent please reply kahite ano pa ito hindi ito
 					lalagpas sa 1 line.
 				</p>
