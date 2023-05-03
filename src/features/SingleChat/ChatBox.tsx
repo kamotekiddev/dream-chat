@@ -3,12 +3,12 @@ import { AiOutlineSend } from 'react-icons/ai';
 
 const ChatBox = () => {
 	return (
-		<div className='py-4 flex gap-4 items-center'>
+		<div className='py-2 flex gap-4 items-center'>
 			<FaPaperclip />
 			<input
 				type='text'
 				placeholder='Your Message...'
-				className='bg-transparent outline-none flex-1'
+				className='text-sm bg-transparent outline-none flex-1'
 			/>
 			<AiOutlineSend />
 		</div>
