@@ -10,7 +10,7 @@ const SideNav = () => {
 				<SideNavLink icon={FaComments} href='/chats'>
 					All Chats
 				</SideNavLink>
-				<SideNavLink icon={FaGlobeAsia} href='/chats'>
+				<SideNavLink icon={FaGlobeAsia} href='/free-for-all'>
 					Free for All
 				</SideNavLink>
 			</div>
