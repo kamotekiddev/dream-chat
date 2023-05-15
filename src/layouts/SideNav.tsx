@@ -15,15 +15,15 @@ const SideNav = () => {
 				</SideNavLink>
 			</div>
 			<div className='space-y-4 self-center'>
-				<SideNavLink icon={FaCommentDots} href='/chats'>
+				<SideNavLink icon={FaCommentDots} href='/suggestions'>
 					Suggestions
 				</SideNavLink>
-				<SideNavLink icon={MdReportProblem} href='/chats'>
-					Report
+				<SideNavLink icon={MdReportProblem} href='/reports'>
+					Reports
 				</SideNavLink>
 			</div>
 			<div className='space-y-4 self-end'>
-				<SideNavLink icon={FaCogs} href='/chats'>
+				<SideNavLink icon={FaCogs} href='/settings'>
 					Settings
 				</SideNavLink>
 			</div>
