@@ -1,3 +1,4 @@
+import ChatMates from '@/features/SingleChat/ChatMates';
 import SearchBox from '@/features/SingleChat/SearchBox';
 import GeneralLayout from '@/layouts/GeneralLayout';
 
@@ -14,6 +15,7 @@ const Layout = ({ children }: Props) => {
 					<div className='px-4'>
 						<SearchBox placeholder='Search' />
 					</div>
+					<ChatMates />
 				</div>
 			</div>
 		</GeneralLayout>
